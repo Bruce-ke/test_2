@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>你好</title>
+    <style></style>
+    <link rel="stylesheet" href="" />
+    <script>
+      /* nums = [1,2,3,1]
+        var containsDuplicate = function (nums) {
+            for (let i = 0; i < nums.legnth; i++) {
+                if (nums.lastIndexOf(nums[i]) !== i) {
+                    return true
+                }
+            }
+            return false
+
+        };
+        console.log(nums.lastIndexOf(nums[0]));
+        console.log(containsDuplicate([1, 2, 3, 1])); */
+      //@ sourceURL=sv_popWin.js
+
+      /*  nums = [0, 1, 2, 3, 4, 0, 0, 7, 8, 9, 10, 11, 12, 0]
+         var containsNearbyDuplicate = function (nums, k) {
+             const set = new Set();
+             for (let i = 0; i < nums.length; i++) {
+                 if (set.has(nums[i])) {
+                     return true;
+                 }
+                 set.add(nums[i]);
+                 if (set.size > k) {
+                     set.delete(nums[i - k]);
+                 }
+             }
+             return false;
+         };
+ 
+ 
+         console.log(containsNearbyDuplicate(nums, 1)); */
+      /* var nums = [0,1,2,3,4,0,0,7,8,9,10,11,12,0]
+          var set = new Set()
+          for(let i = 0; i < nums.length; i++) {
+              set.add(nums[i])
+  
+          }
+           set.delete(nums[])
+          console.log(set); */
+    </script>
+    <style>
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <button id="btn">我是按钮</button> -->
+    <!-- <button class="btn">我是按钮</button>  -->
+    <div style="width: 100px; height: 100px; background: red" id="box"></div>
+    <a href="https://www.baidu.com" id="a">打开百度，你就知道！</a>
+    <script>
+      // var btn = document.getElementById('list')
+      // console.log(btn);
+      /* function getStyle(obj, name) {
+                        if (window.getComputedStyle) {
+                            //正常浏览器的方式，具有getComputedStyle()方法
+                            return getComputedStyle(obj, null)[name];
+                        } else {
+                            //IE8的方式，没有getComputedStyle()方法
+                            return obj.currentStyle[name];
+                        }
+                    }
+
+                    var box = document.getElementById("box");
+                    console.log(getStyle(box, 'width'));
+                    console.log(getStyle(box, 'background')); */
+      /* var a = document.getElementById('box')
+
+                    function getInnertext(element) {
+                        if (typeof element.textContent == 'undifined') {
+                            return element.innerText;
+                        }
+                        else {
+                            return element.textContent;
+                        }
+                    }
+                    box.style.background = 'green'
+                    var a = document.getElementById('a')
+
+
+                    console.log(a.textContent); */
+
+      /*  /*获取任意标签的内容
+                     function getInnerText(element) {
+                         // 判断浏览器是否支持textContent,如果支持，则使用textContent获取内容，否则使用innerText获取内容。
+                         if (typeof element.textContent == "undefined") {
+                             return element.innerText;
+                         } else {
+                             return element.textContent;
+                         }
+                     }
+
+                     /*设置任意标签的内容
+                     function setInnerText(element, text) {
+                         // 判断浏览器是否支持textContent,如果支持，则使用textContent设置内容，否则使用innerText设置内容。
+                         if (typeof element.textContent == "undefined") {
+                             return element.innerText = text;
+                         } else {
+                             return element.textContent = text;
+                         }
+                     } */
+
+      taskAsync = function () {
+        var result = setTimeout(function () {
+          console.log("异步任务的结果");
+        }, 3000);
+        return result;
+      };
+
+      var result = taskAsync(); // result 不是异步任务的结果，而是一个 timer id
+      // normalFn
+      // asyncFn
+    </script>
+  </body>
+</html>
